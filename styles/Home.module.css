@@ -1,5 +1,37 @@
 .container {
-  padding: 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
+  margin-left: 20px;
+}
+
+.logo {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.rightSection {
+  margin-top: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main {
