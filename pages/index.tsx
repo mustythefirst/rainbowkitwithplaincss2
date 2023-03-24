@@ -3,6 +3,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+import Example from "../components/example";
+import Exampletwo from "../components/exampletwo";
+import Examplethree from "../components/examplethree";
+import Eventheader from "../components/eventheader"
+
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -14,6 +20,7 @@ const Home: NextPage = () => {
         />
 
         <link rel="icon" href="/favicon2.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
       
 
       </Head>
@@ -26,15 +33,23 @@ const Home: NextPage = () => {
           <ConnectButton  />
         </div>
       </header>
+      
+
+   
+      
+      
 
       <main className={styles.main}>
+        <div><Eventheader/></div>
+      
 
         
 
-        
 
         <div className={styles.grid}>
-          
+          <div style={{ marginBottom: '2rem' }}><Example /></div>
+          <div style={{ marginBottom: '2rem' }}><Exampletwo /></div>
+          <div style={{ marginBottom: '2rem' }}><Examplethree /></div>
          
 
          
